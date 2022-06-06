@@ -37,14 +37,17 @@ body{
     border-radius: .7rem;
 }
 .container form #btn{
-    width: 5vw;
-    height: 4vh;
-    margin-top: .2rem;
+    width: auto;
+    height: 5vh;
+    /* margin-top: .2rem; */
     margin-left: 1rem;
     border: none;
     cursor: pointer;
     transition: all .5s;
-    padding: .5rem;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
     border-radius: .7rem;
 
 }
@@ -54,14 +57,16 @@ body{
     color: white;
 }
 .container #quit{
-    width: 5vw;
+    width: auto;
     height: 4vh;
-    margin-top: .2rem;
-    margin-left: 1rem;
+    /* margin-top: .2rem; */
+    /* margin-left: 1rem; */
+    text-align: center;
     border: none;
     cursor: pointer;
     transition: all .5s;
-    padding: .5rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
     border-radius: .7rem;
     background-color: red;
     color: white;
@@ -127,10 +132,40 @@ body{
     border-radius: 1rem;
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+    color: rgb(140, 37, 0);
+    /* background-color: coral; */
+}
 #quit1 img{
     border-radius: 5rem;
 }
 #quit1 h1{
     color: red;
     font-size: 5rem;
+}
+@media (max-width:595px){
+    .container form #input{
+        width: 40vw;
+    }
+    .container h1{
+        font-size: 1.2rem;
+    }
+    #quit1 h1{
+        font-size: 1.5rem;
+    }
+    #quit1 img{
+        width: 300px;
+    }
+}
+@media (max-width:990px){
+    #win h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+@media (max-width:785px){
+    .container form #input{
+        width: 40vw;
+    }
 }
