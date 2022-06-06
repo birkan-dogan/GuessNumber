@@ -14,6 +14,8 @@ quit.onclick = function(){
     document.getElementById("quit1").style.display = "flex";
 }
 
+let lowNumber = 0;
+let upNumber = 100;
 
 buton.onclick = function(){
     let number = document.getElementById("input").value;
@@ -25,7 +27,8 @@ buton.onclick = function(){
         if(hold > number){
             write.innerHTML = `A bit higher than ${number}`;
             input.value = " ";
-            guess.innerHTML = `Guess The Number (${number}-100)`;
+            lowNumber = number
+            guess.innerHTML = `Guess The Number (${lowNumber}-${upNumber})`;
             forCount++
             count.innerHTML = `Number of attempts: ${forCount} `;
 
@@ -33,7 +36,8 @@ buton.onclick = function(){
         } else if (hold < number){
             write.innerHTML = `A bit lower than ${number}
             `;
-            guess.innerHTML = `Guess The Number (1-${number})`;
+            upNumber = number;
+            guess.innerHTML = `Guess The Number (${lowNumber}-${upNumber})`;
             input.value = " ";
 
             forCount++
@@ -50,9 +54,9 @@ again.onclick = function(){
     document.querySelector(".container").style.display = "flex";
     document.getElementById("win").style.display = "none";
 }
-window.onload = () => {
-    input.focus();
-}
+// window.onload = () => {
+//     input.focus();
+// }
 input.addEventListener(("keydown", (e) => {
     if(e.keyCode === 13){
         buton.onclick();
