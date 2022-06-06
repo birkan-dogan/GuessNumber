@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.7rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* background-color: black; */
+    background-image: url("./images/Animated\ Shape.svg");
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* display: none; */
+}
+.container h1{
+    color: rgb(255, 96, 38);
+}
+.container form{
+    margin-top: 3rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.container form #input{
+    margin-bottom: 3rem;
+    width: 15vw;
+    height: 5vh;
+    text-align: center;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: .7rem;
+}
+.container form #btn{
+    width: 5vw;
+    height: 4vh;
+    margin-top: .2rem;
+    margin-left: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all .5s;
+    padding: .5rem;
+    border-radius: .7rem;
+
+}
+.container form #btn:hover{
+    transform: scale(1.2);
+    background-color: rgb(49, 185, 49);
+    color: white;
+}
+.container #quit{
+    width: 5vw;
+    height: 4vh;
+    margin-top: .2rem;
+    margin-left: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all .5s;
+    padding: .5rem;
+    border-radius: .7rem;
+    background-color: red;
+    color: white;
+    position:fixed;
+    right: 1rem;
+    bottom: 1rem;
+    transition: all .5s;
+}
+.container #quit:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 15px 1px red;
+}
+.container img{
+    border-radius: 3rem;
+    box-shadow: 1px 1px 5px 1px white;
+
+}
+.container #write{
+    margin-top: 3rem;
+}
+.container #count{
+    color: forestgreen;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+#win{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: none;
+}
+#win img{
+    width: 40vw;
+    border-radius: 10rem;
+    box-shadow: 1px 10px 25px 10px greenyellow;
+}
+#win button{
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 30vw;
+    background-color: coral;
+    /* border: none; */
+    border-radius: 5rem;
+    color: white;
+    cursor: pointer;
+}
+#quit1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 1rem;
+    display: none;
+}
+#quit1 button{
+    padding: 1rem;
+    background-color: rgb(153, 255, 0);
+    color: coral;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+#quit1 img{
+    border-radius: 5rem;
+}
+#quit1 h1{
+    color: red;
+    font-size: 5rem;
+}
