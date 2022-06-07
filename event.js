@@ -54,9 +54,21 @@ again.onclick = function(){
     document.querySelector(".container").style.display = "flex";
     document.getElementById("win").style.display = "none";
 }
-// window.onload = () => {
-//     input.focus();
-// }
+window.onload = () => {
+    input.focus();
+}
+again.onclick = function(){
+    document.getElementById("win").style.display = "none";
+    document.querySelector(".container").style.display = "flex";
+    window.location.reload();
+}
+document.getElementById("quit2").onclick = function(){
+    document.getElementById("quit1").style.display = "none";
+    document.querySelector(".container").style.display = "flex";
+    window.location.reload();
+}
+
+
 input.addEventListener(("keydown", (e) => {
     if(e.keyCode === 13){
         buton.onclick();
